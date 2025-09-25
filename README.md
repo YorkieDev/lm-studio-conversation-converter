@@ -6,7 +6,8 @@
 
 A clean, modern web interface for converting LM Studio conversation files (`.json`) into readable text formats (`.txt` or `.md`).
 
-![LM Studio Conversation Converter](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=LM+Studio+Conversation+Converter)
+<img width="2552" height="1224" alt="image" src="https://github.com/user-attachments/assets/e80d7e54-06c6-417c-9abe-405a15d302cc" />
+
 
 ## 🚀 Quick Start
 
