@@ -4,6 +4,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/YorkieDev/lm-studio-conversation-converter.svg)](https://github.com/YorkieDev/lm-studio-conversation-converter/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/YorkieDev/lm-studio-conversation-converter.svg)](https://github.com/YorkieDev/lm-studio-conversation-converter/issues)
 
+⚠️ Affiliation Disclaimer: This project is an independent initiative developed and maintained by the community. It has not been authorized, sponsored, or otherwise approved by LM Studio. The name "LM Studio" and any related names, marks, and logos are the trademarks of their respective owners. The use of these trademarks is for identification and reference purposes only and does not imply any association with the trademark holder.
+
 A clean, modern web interface for converting LM Studio conversation files (`.json`) into readable text formats (`.txt` or `.md`).
 
 <img width="2552" height="1224" alt="image" src="https://github.com/user-attachments/assets/e80d7e54-06c6-417c-9abe-405a15d302cc" />
