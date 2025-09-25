@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LM Studio Conversation Converter</title>
+    <meta name="description" content="Convert LM Studio conversation files to readable text formats with this clean, modern web interface.">
+    <meta name="keywords" content="LM Studio, conversation converter, chat export, AI, LLM, text converter">
+    <meta name="author" content="Yorkie">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yorkiedev.github.io/lm-studio-conversation-converter/">
+    <meta property="og:title" content="LM Studio Conversation Converter">
+    <meta property="og:description" content="Convert LM Studio conversation files to readable text formats with this clean, modern web interface.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yorkiedev.github.io/lm-studio-conversation-converter/">
+    <meta property="twitter:title" content="LM Studio Conversation Converter">
+    <meta property="twitter:description" content="Convert LM Studio conversation files to readable text formats with this clean, modern web interface.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="images/133744619.png" alt="LM Studio Logo" class="header-logo">
+                </div>
+                <div class="title-section">
+                    <h1 class="main-title">
+                        <span class="title-primary">LM Studio</span>
+                        <span class="title-secondary">Conversation Converter</span>
+                    </h1>
+                    <p class="subtitle">Transform your conversations into clean, readable formats</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="converter-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <h3>Drop your conversation.json file here</h3>
+                        <p>or</p>
+                        <button class="browse-btn" id="browseBtn">
+                            <i class="fas fa-folder-open"></i>
+                            Browse Files
+                        </button>
+                        <input type="file" id="fileInput" accept=".json" hidden>
+                        <div class="file-info">
+                            <small>Supports: .json files from LM Studio conversations</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls-section" id="controlsSection" style="display: none;">
+                    <div class="format-selection">
+                        <h3>Export Format</h3>
+                        <div class="format-options">
+                            <label class="format-option">
+                                <input type="radio" name="format" value="txt" checked>
+                                <span class="format-label">
+                                    <i class="fas fa-file-alt"></i>
+                                    Plain Text (.txt)
+                                </span>
+                            </label>
+                            <label class="format-option">
+                                <input type="radio" name="format" value="md">
+                                <span class="format-label">
+                                    <i class="fab fa-markdown"></i>
+                                    Markdown (.md)
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="options-section">
+                        <h3>Export Options</h3>
+                        <div class="options-grid">
+                            <label class="option-toggle">
+                                <input type="checkbox" id="includeMetadata" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Include conversation metadata</span>
+                            </label>
+                            <label class="option-toggle">
+                                <input type="checkbox" id="includeTimestamps">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Include timestamps</span>
+                            </label>
+                            <label class="option-toggle">
+                                <input type="checkbox" id="includeSystemPrompts">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Include system prompts</span>
+                            </label>
+                            <label class="option-toggle">
+                                <input type="checkbox" id="includeStats">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Include generation stats</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="convert-btn" id="convertBtn">
+                        <i class="fas fa-exchange-alt"></i>
+                        Convert & Download
+                    </button>
+                </div>
+
+                <div class="preview-section" id="previewSection" style="display: none;">
+                    <div class="preview-header">
+                        <h3>Preview</h3>
+                        <button class="copy-btn" id="copyBtn">
+                            <i class="fas fa-copy"></i>
+                            Copy to Clipboard
+                        </button>
+                    </div>
+                    <div class="preview-content" id="previewContent"></div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <h3><i class="fas fa-info-circle"></i> How to find your conversations</h3>
+                    <div class="info-content">
+                        <p><strong>Method 1:</strong> Right-click on any chat in LM Studio sidebar → "Reveal in File Explorer"</p>
+                        <p><strong>Method 2:</strong> Navigate to the conversations folder directly:</p>
+                        <div class="path-info">
+                            <div class="path-item">
+                                <strong>Windows:</strong>
+                                <code>%USERPROFILE%\.lmstudio\conversations</code>
+                            </div>
+                            <div class="path-item">
+                                <strong>Mac/Linux:</strong>
+                                <code>~/.lmstudio/conversations/</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-lightbulb"></i> Tips</h3>
+                    <ul>
+                        <li>Drag and drop files directly onto the upload area</li>
+                        <li>Choose between plain text or Markdown formatting</li>
+                        <li>Enable metadata to preserve conversation details</li>
+                        <li>Use the preview to check your conversion before downloading</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/YorkieDev" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://discord.gg/lmstudio" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p class="disclaimer">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        This is an independent community project and is not officially endorsed or affiliated with LM Studio
+                    </p>
+                    <p class="made-with-love">
+                        Made with <i class="fas fa-heart heart-icon"></i> by Yorkie for the LM Studio Community
+                    </p>
+                    <p class="license">&copy; 2025 Yorkie. Licensed under MIT License.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

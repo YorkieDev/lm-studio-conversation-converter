@@ -1,0 +1,31 @@
+{
+  "name": "lm-studio-conversation-converter",
+  "version": "1.0.0",
+  "description": "A clean, modern web interface for converting LM Studio conversation files to readable text formats",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YorkieDev/lm-studio-conversation-converter.git"
+  },
+  "keywords": [
+    "lm-studio",
+    "conversation",
+    "converter",
+    "chat",
+    "export",
+    "markdown",
+    "text",
+    "ai",
+    "llm"
+  ],
+  "author": "Yorkie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YorkieDev/lm-studio-conversation-converter/issues"
+  },
+  "homepage": "https://yorkiedev.github.io/lm-studio-conversation-converter/"
+}
