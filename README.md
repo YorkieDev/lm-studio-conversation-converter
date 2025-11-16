@@ -137,4 +137,4 @@ If you encounter any issues or have suggestions for improvements, please:
 
 ---
 
-**Note:** This tool is designed specifically for LM Studio conversation files. Other chat export formats may not be compatible. No Pull requests or contributions are accepted as this is a personal project. If you would like to suggest an issue or report a bug, please open an issue. 
+**Note:** This tool is designed specifically for LM Studio conversation files. Other chat export formats may not be compatible. No Pull requests or contributions are accepted as this is a personal project. If you would like to suggest an feature or report a bug, please open an issue. 
