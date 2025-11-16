@@ -6,9 +6,10 @@
 
 ⚠️ Affiliation Disclaimer: This project is an independent initiative developed and maintained by the community. It has not been authorized, sponsored, or otherwise approved by LM Studio. The name "LM Studio" and any related names, marks, and logos are the trademarks of their respective owners. The use of these trademarks is for identification and reference purposes only and does not imply any association with the trademark holder.
 
-A clean, modern web interface for converting LM Studio conversation files (`.json`) into readable text formats (`.txt` or `.md`).
+A clean, modern web interface for converting LM Studio conversation files (`.json`) into readable text formats (`.txt`, `.md`, `.html` and `.pdf`).
 
-<img width="2552" height="1224" alt="image" src="https://github.com/user-attachments/assets/e80d7e54-06c6-417c-9abe-405a15d302cc" />
+<img width="2559" height="1228" alt="image" src="https://github.com/user-attachments/assets/4e7fe159-3bd1-4be0-9f0d-8364a8556ff6" />
+
 
 
 ## 🚀 Quick Start
@@ -21,7 +22,7 @@ A clean, modern web interface for converting LM Studio conversation files (`.jso
 
 - 🎨 **Modern Dark Theme** - Sleek, professional interface with smooth animations
 - 📁 **Drag & Drop Support** - Simply drag conversation files onto the upload area
-- 📝 **Multiple Export Formats** - Convert to plain text (.txt) or Markdown (.md)
+- 📝 **Multiple Export Formats** - Convert to plain text (.txt), Markdown (.md), HTML (.html) and PDF (.pdf)
 - ⚙️ **Customizable Options** - Include/exclude metadata, timestamps, system prompts, and generation statistics
 - 👀 **Live Preview** - See your converted text before downloading
 - 📋 **Copy to Clipboard** - Quick copy functionality for easy sharing
@@ -127,30 +128,6 @@ The application uses CSS custom properties for theming. You can easily customize
     /* ... more variables */
 }
 ```
-## License
-
-MIT License
-
-Copyright (c) 2025 Yorkie
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
 ## Support
 
 If you encounter any issues or have suggestions for improvements, please:
@@ -160,4 +137,4 @@ If you encounter any issues or have suggestions for improvements, please:
 
 ---
 
-**Note:** This tool is designed specifically for LM Studio conversation files. Other chat export formats may not be compatible.
+**Note:** This tool is designed specifically for LM Studio conversation files. Other chat export formats may not be compatible. No Pull requests or contributions are accepted as this is a personal project. If you would like to suggest an issue or report a bug, please open an issue. 
