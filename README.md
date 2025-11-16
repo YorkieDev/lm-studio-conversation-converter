@@ -127,15 +127,6 @@ The application uses CSS custom properties for theming. You can easily customize
     /* ... more variables */
 }
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
 ## License
 
 MIT License

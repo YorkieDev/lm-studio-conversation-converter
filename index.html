@@ -22,6 +22,7 @@
     
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -74,6 +75,20 @@
                                 <span class="format-label">
                                     <i class="fab fa-markdown"></i>
                                     Markdown (.md)
+                                </span>
+                            </label>
+                            <label class="format-option">
+                                <input type="radio" name="format" value="html">
+                                <span class="format-label">
+                                    <i class="fab fa-html5"></i>
+                                    HTML (.html)
+                                </span>
+                            </label>
+                            <label class="format-option">
+                                <input type="radio" name="format" value="pdf">
+                                <span class="format-label">
+                                    <i class="fas fa-file-pdf"></i>
+                                    PDF (.pdf)
                                 </span>
                             </label>
                         </div>
